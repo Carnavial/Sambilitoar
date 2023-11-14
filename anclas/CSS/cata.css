@@ -1,0 +1,18 @@
+main > .container{
+    padding: 40px;
+}
+
+img{
+    width:250px;
+    height:250px;
+    margin: auto;
+}
+.nombre{
+    text-align: center;
+    color: #50d857;
+    margin-top: 20px;
+}
+.gata{
+    margin-top: 20px;
+
+}

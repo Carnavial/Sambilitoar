@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../CSS/Login.css">
+    <a href="./Administrador/index.html"></a>
+	<title>Bienvenido</title>
+</head>
+<body>
+	<div class="contenedor"> 
+		<div class="transp">
+			<div class="form-box">
+				<div class="button-box">
+					<div id="elegir"></div>
+					<button type="button" class="toggle-btn" onclick="login()">Iniciar Sesión</button>
+					<button type="button" class="toggle-btn" onclick="registrar()">Regristrar</button>
+				</div>
+				<form action="" id="login-form" class="input-group">
+					<input type="text" class="input-field" placeholder="Correo" id="login-username" required>
+					<input type="password" class="input-field" placeholder="Contraseña" id="login-password" required>
+					<!-- <input type="checkbox" class="checkbox"><span>Recordar Contraseña</span> -->
+					<button type="submit" class="submit-btn">Acceder</button>
+				</form>
+				<form  id="register-form" class="input-group">
+					<input type="text" class="input-field" placeholder="Correo" id="username" required>
+					<input type="password" class="input-field" placeholder="Contraseña" id="password" required>
+					<!-- <input type="checkbox" class="checkbox"><span>Acepto los terminos y condiciones.</span> -->
+					<button type="submit" class="submit-btn">Registrar</button>
+				</form>
+			</div>
+		</div>
+		
+	</div>	
+	<script src="../JavaScript/Login.js"></script>
+	<script>
+		var x = document.getElementById("login-form");
+		var y = document.getElementById("register-form");
+		var z = document.getElementById("elegir");
+
+		function login(){
+			x.style.left= "50px";
+			y.style.left= "450px";
+			z.style.left= "0px";
+		}
+
+		function registrar(){
+			x.style.left= "-400px";
+			y.style.left= "50px";
+			z.style.left= "120px";
+		}
+
+	</script>
+	<div id="message"></div>
+</body>
+</html>

@@ -1,0 +1,498 @@
+						/*BARRA DE NAVEGACION*/
+
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box; 
+}
+
+body{
+	background:linear-gradient(#ffffff,#F2F2F2,#EEEEEE,#DEDEDE,
+	#CACACA,#BDBDBD,#B2B2B2,#A7A7A7,#9D9D9D,#929292,#898989);
+		  
+}
+
+.logo{
+	background:gray; 
+	margin-top: 40px;
+	margin-left: 30px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	transition:transform .2s;
+}     
+
+
+
+
+.logo:hover{
+	transform:scale(1.5);    
+}
+
+
+.navegacion{
+	width:80%;
+	margin:20px auto;
+	margin-top: -55px;
+	background:linear-gradient(#607751,#6A8359,#779364,#83A26E,
+	#8EB177,#9DC483,#ADD790,#BBE99C,#CBFFA9);
+	border-radius:5px 20px;
+	font-size: 20px;
+}
+
+.navegacion ul{
+	list-style:none;
+}
+
+header ul{
+	display:flex;
+	justify-content:space-around;
+}
+
+.menu > li{
+	position:relative;
+	display:inline-block;
+}
+
+.menu > li > a{
+	display:block;
+	padding:15px 20px;
+	color:#353535;
+	font-family:'Open sans';
+	text-decoration:none; 
+}
+
+.menu li a:hover{
+	color:#579E23;
+	transition:all .3s;
+	box-shadow:2px 1px 15px;
+}
+     									/*SUBMENU*/
+
+.submenu{
+	position:absolute;
+	background:#B6F787;
+	display:none;
+	box-shadow:5px 2px 15px; 
+}
+
+.submenu li a{
+	display:block;
+	padding:15px;
+	color:black;
+	font-family:'Open sans';
+	text-decoration:none;   
+}
+ 
+.menu li:hover .submenu{
+	display:block;
+}
+
+
+
+
+
+									/*TITULO PARRAFOS*/
+.titulopa{	 
+	width:700px; 
+	display:flex;
+	justify-content:center;
+	font-size:50px;
+	margin-left:20%;
+	margin-right:20%;
+	margin-bottom:20px;  
+	 
+}
+
+
+
+									/*PARRAFOS*/
+
+.parra1{
+	/*background:linear-gradient(#774485,#824A91,#8D509D,#A15CB3,
+	#AC63BF,#BB6DCF,#C672DC,#D77CEE,#DF81F7,#E482FF);*/
+	background:linear-gradient(#CBFFA9,#BBE99C,#ADD790,#9DC483,#8EB177,
+	#83A26E,#779364,#6A8359,#607751);
+	padding-top:20px; 
+	padding-bottom:25px;
+	margin-left:4%;
+	margin-right:25%;
+	border-radius:15%;   
+}
+
+.parrafo{
+	background:#fff;
+	width:900px; 
+	margin:20px 0px;
+	border-radius: 5px 5px;
+	font-size:25px;
+	box-shadow: 8px 8px 20px #000000;   
+}
+
+
+.parrafo1,
+.parrafo2,
+.parrafo3,
+.parrafo4,
+.parrafo5,
+.parrafo6{
+	display:flex;
+	justify-content:center;
+}
+							/*IMAGENES DEL NEGOCIO*/
+
+.imagenes{
+	background:cora;
+	display:flex;
+	flex-direction:column;
+	align-items:flex-end;
+	margin-right:10px;
+	margin-left:80%;
+	margin-top:-63%;
+}     
+
+
+.imagenes img{
+	margin-top:10px;
+	border-radius:10px 10px;
+	box-shadow:5px 5px 5px; 
+}
+
+					/*ZOOM DE LAS IMAGENES*/
+
+.imagenes .img1{
+	transition:transform .2s;   
+}
+
+.imagenes .img1:hover{
+	transform:scale(1.5); 
+}
+
+.imagenes .img2{
+	transition:transform .2s; 
+}
+
+.imagenes .img2:hover{
+	transform:scale(1.5); 
+}
+
+.imagenes .img3{
+	transition:transform .2s; 
+}
+
+.imagenes .img3:hover{
+	transform:scale(1.5); 
+}
+
+.imagenes .img4{
+	transition:transform .2s; 
+}
+
+.imagenes .img4:hover{
+	transform:scale(1.5); 
+}
+
+.imagenes .img5{
+	transition:transform .2s; 
+}
+
+.imagenes .img5:hover{
+	transform:scale(1.5); 
+}
+
+
+									/*CARRUSEL*/
+
+
+.carrousel{
+    margin-right:30%;
+    margin-left:10%;
+    margin-top:-50px;
+    margin-bottom:30px;
+    box-shadow: 5px 5px 20px;
+    border-radius:40px 10px;
+}
+   
+
+.itemCarrouselTarjeta > p{
+	font-size:20px;
+	padding:50px;
+	text-align: center;
+}
+
+
+.conteCarrousel{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius:40px 10px;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+#itemCarrousel-1{
+    background:linear-gradient(#CBFFA9,#BBE99C,#ADD790,#9DC483,#8EB177,
+	#83A26E,#779364,#6A8359,#607751);
+}
+
+#itemCarrousel-2{
+     background:linear-gradient(#CBFFA9,#BBE99C,#ADD790,#9DC483,#8EB177,
+	#83A26E,#779364,#6A8359,#607751);
+}
+
+#itemCarrousel-3{
+     background:linear-gradient(#CBFFA9,#BBE99C,#ADD790,#9DC483,#8EB177,
+	#83A26E,#779364,#6A8359,#607751);
+}
+
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.itemCarrouselArrows > a > i{
+    color: white;
+}
+
+
+
+										/*FOOTER*/
+
+.pieindex{
+	background:cora;
+	height:px; 
+	margin-top:20px;  
+}
+
+.conte{
+	background:gre;
+	width:60%;
+	height:300px;
+	margin-left:35%;
+	margin-bottom:-300px; 
+	display: flex;
+	flex-direction: row;   
+}
+
+.contenedorfoo{
+	background:blu;
+	width:800px; 
+	margin-top:5px;
+	margin-left:2%;
+	margin-right:2%;  
+}
+
+.ubicacion{
+	background:gree;
+	margin-right:50%; 
+}
+
+.ubicacion h3{
+
+	font-size:45px;
+	font-family:'Impact';
+}
+
+.ubicacion p{
+	margin-top: 10px;
+	background:re;
+	width:100%; 
+	font-size: 15px;
+}
+
+.imgfoo{
+	border-radius:5px 5px; 
+	transition:transform .2s; 
+}
+
+.imgfoo:hover{
+	transform:scale(1.9);
+}
+
+.horario{
+	background:salmo;
+	margin-top:-35%;
+	margin-left:55%;    
+}
+
+.horario h3{
+	font-size:40px; 
+	font-family:'Impact';
+}
+
+.horario p{
+	margin-top:5px; 
+	background:re;
+	width:100%; 
+	font-size: 15px;
+}
+
+.contactanos{
+	background:lim;
+	margin-top:30px;
+	margin-left:55%;
+}
+
+.contactanos h3{
+	font-size:30px;
+	font-family:'Impact';
+}
+
+.contactanos ul{
+	margin-top:5px; 
+	list-style: none;
+	background:re;
+	width:100%; 
+	font-size: 15px;
+}
+
+.lista2{ 
+	background:gra;
+	width:250px;
+	height:300px; 
+	margin-left:15%;    		    
+}
+
+.contelis1{
+	background:re;
+	margin-top:5%;
+	width:80%;
+	margin-left:10%;     
+}
+
+.listadedr{ 
+	font-family:'Impact';
+	font-size:20px;
+	margin-top:-300px;
+	display:flex;
+	flex-direction: column;
+	    
+}
+
+
+.contelis2{
+	background:re;
+	margin-top:10%;
+	width:80%;
+	margin-left:10%;
+}
+
+.lisatadedr2{
+	list-style: none;
+	font-size:20px;
+	margin-top:5%;
+	display:flex;
+	flex-direction: column;
+}
+
+.creador{ 
+	list-style:none; 
+}
+
+.creador2{
+	list-style:none; 
+}
+
+.raya1{
+	background:black;
+	width:1px;
+	height:300px;
+	margin-bottom:-40%; 
+	margin-left:100%;    
+}
+
+#titucreador{
+	background:blu;
+	font-family:'Impact';
+	font-size:30px; 
+}
+
+#titudueñonegocio{
+	background:blu;
+	font-family:'Impact';
+	font-size:25px; 
+}
+
+.raya2{
+	background:black; 
+	display:flex; 
+	width:400px;
+	height:1px;
+	margin-top:5px;     
+}	
+
+.redsoc{
+	background:gra;
+	margin-left:8%;
+	margin-right:8%;
+	display:flex;
+	justify-content:space-around;
+	padding:px;        
+}
+
+.redes{
+	text-decoration:none;
+}
+
+.titulopie{
+	background:re;
+	margin-top:10px; 
+	margin-left:40%;
+	margin-right:40%;   
+}
+
+.titulopie img{
+	margin-right:12%;
+	margin-left:12%;   
+}
+
+.nameconsu{
+	margin-top:10px; 
+	font-size:30px;  
+	font-family:'Impact';
+	display:flex;
+	justify-content:center;  
+}
+
+.copycon{
+	background:gra;
+	display:flex;
+	justify-content:center;
+	padding:10px;   
+}
+
+.redsoc > a {
+	background:#000000;
+	width: 30px;
+	height: 30px;
+}
